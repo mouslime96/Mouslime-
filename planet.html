@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		
+		<meta charset="utf-8" />
+        <title>PLANETE ELEVE 2.0</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta content="Ministère de l'Education nationale, PLANETE ELEVE" name="description" />
+        <meta content="SIMEN" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <link rel="shortcut icon" href="images/favico.png">
+        <!-- Proprietaire: Mouslime -->
+
+
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/core.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/components.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/pages.css" rel="stylesheet" type="text/css">
+
+        <!-- Redesigned theme styles -->
+        <style>
+            body {
+                background: #f0f4f8;
+                color: #333;
+                font-family: 'Open Sans', Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            .wrapper-page {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                padding: 20px;
+            }
+            .panel-pages {
+                width: 100%;
+                max-width: 400px;
+                border-radius: 12px;
+                box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+                background: #fff;
+                overflow: hidden;
+            }
+            .panel-heading {
+                background: #006699;
+                padding: 20px;
+                text-align: center;
+            }
+            .panel-heading h3 {
+                margin: 0;
+                color: #fff;
+                font-weight: 600;
+                font-size: 1.5rem;
+            }
+            .panel-body {
+                padding: 30px;
+            }
+            .btn-primary {
+                background-color: #0077cc;
+                border-color: #0077cc;
+            }
+            .btn-primary:hover {
+                background-color: #005fa3;
+                border-color: #005fa3;
+            }
+            .form-control {
+                border-radius: 4px;
+                border: 1px solid #ccc;
+            }
+            .alert-danger {
+                background-color: #fdecea;
+                color: #611a15;
+                border: 1px solid #f5c6cb;
+            }
+            footer {
+                font-size: 0.8rem;
+                color: #777;
+            }
+            body {
+                background: #1a0a0a;
+                color: #f1c0c0;
+            }
+            .container, .card, header, footer {
+                background: #2b0909;
+                border: 1px solid #821515;
+            }
+            a, button {
+                color: #ff8c8c;
+            }
+            a:hover, button:hover {
+                color: #ffdddd;
+            }
+        </style>
+    </head>
+    <body>
+        <header style="background:#005fa3;color:#fff;padding:20px;text-align:center;">
+            <h1>Bienvenue sur Planète Élève</h1>
+            <p style="margin:0;">Portail officiel du Ministère de l'Éducation nationale pour les élèves et enseignants.</p>
+            <nav style="margin-top:10px;">
+                <a href="planet.html" style="color:#fff;margin:0 10px;">Accueil</a> |
+                <a href="news.html" style="color:#fff;margin:0 10px;">Actualités</a> |
+                <a href="about.html" style="color:#fff;margin:0 10px;">À propos</a> |
+                <a href="contact.html" style="color:#fff;margin:0 10px;">Contact</a>
+            </nav>
+        </header>
+        <main>
+        <div class="wrapper-page">
+            <div class="panel panel-color panel-primary panel-pages">
+                <div class="panel-heading"> 
+                    <div class="bg-overlay"></div>
+                    <div class="text-center">
+                        <img src="images/logo.png" alt="Planète élève logo" style="max-width:120px;margin-bottom:10px;">
+                        <h3 class="m-t-10 text-white">PLANETE ELEVE</h3>
+                    </div>
+                </div> 
+
+
+                <div class="panel-body">
+							<!--<form class="form-horizontal m-t-20" action="index.html">-->
+					<form id="sign_in" method="POST" class="form-horizontal m-t-20" action="https://eleve.education.sn/auth">   
+                    <div class="form-group">
+                        <div class="col-xs-12">
+                            <input class="form-control input-lg" type="text" required="" placeholder="Votre IEN" name="username">
+                        </div>
+                    </div>
+					<div class="form-group">
+                        <div class="col-xs-12">
+                            <input class="form-control input-lg" type="password" required="" placeholder="Votre Code temporaire" name="password">
+                        </div>
+                    </div>
+<div class="form-group">
+                        <div class="col-xs-12">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="remember"> Se souvenir de moi
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group text-center m-t-40">
+                        <div class="col-xs-12">
+                            <button class="btn btn-primary btn-lg w-lg waves-effect waves-light" type="submit"> Se connecter </button>
+                        </div>
+                    </div>
+                    <div class="form-group text-center">
+                        <a href="#" class="text-white"><small>Mot de passe oublié ?</small></a>
+                    </div>
+                </form> 
+                                        
+                        <div id="error-msg" class="alert alert-danger" style="display:none;">
+							Informations de connexion invalides
+						</div>
+					
+					                </div>                                 
+            </div>
+<footer class="text-center" style="margin-top:20px;padding:20px 0;">
+                <small>&copy; 2026 Ministère de l'Education nationale</small> | Propriétaire : Mouslime |
+                <a href="#" style="color:#006699;">Contact</a> |
+                <a href="#" style="color:#006699;">Aide</a> |
+                <a href="#" style="color:#006699;">Mentions légales</a>
+            </footer>
+        </div>
+            <section style="padding:40px 20px; background:#f9fafb; text-align:center;">
+                <div style="max-width:800px; margin:0 auto;">
+                    <p>Pour en savoir plus, sélectionnez une section ci-dessus :</p>
+                    <p><a href="news.html">Voir les actualités</a> | <a href="about.html">À propos du service</a></p>
+                </div>
+            </section>
+
+        
+    	<script>
+            var resizefunc = [];
+            // show error message on login failure (example)
+            document.addEventListener('DOMContentLoaded', function(){
+                var form = document.getElementById('sign_in');
+                form.addEventListener('submit', function(e){
+                    // fake validation for demo
+                    var user = form.username.value.trim();
+                    var pass = form.password.value;
+                    if (!user || !pass) {
+                        e.preventDefault();
+                        document.getElementById('error-msg').style.display = 'block';
+                    }
+                });
+            });
+        <!-- Main  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/detect.js"></script>
+        <script src="assets/js/fastclick.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/jquery.blockUI.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/jquery.nicescroll.js"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+
+        <script src="assets/js/jquery.app.js"></script>
+	
+	</body>
+</html>
+<style>
+  body {
+    background: #1a0a0a;
+    color: #f1c0c0;
+  }
+  .container, .card, header, footer {
+    background: #2b0909;
+    border: 1px solid #821515;
+  }
+  a, button {
+    color: #ff8c8c;
+  }
+  a:hover, button:hover {
+    color: #ffdddd;
+  }
+</style>
